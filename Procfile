@@ -1,1 +1,1 @@
-web: gunicorn <pythonfun>:app
+web: gunicorn pythonfun:app
