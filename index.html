@@ -47,6 +47,10 @@
               <img id=earth src="nasa.jpg" alt="Sahara Desert from Space" width="100%" height="100%">
             </div>
 
+            <div class="container4" id="ClimateChangeAPI" style="width:100%;height:400px;">
+              <script src="http://climatedataapi.worldbank.org/climateweb/rest/v1/country/type/var/start/end/ISO3"></script>
+            </div>
+
             <!--collapsibles-->
             <h1>Environmental Impact</h1>
               <button class="collapsible" id="ec">Meat Consumption</button> <!--collapsible textarea-->
@@ -130,9 +134,9 @@
                   <form method="post" action="/signup">
                     <input type="text" placeholder="Name" name="name" required>
                     <input type="text" placeholder="Email address" name="mail" required>
-                      <label>
-                        <input type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
-                      </label>
+                    <label>
+                  <input type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
+                    </label>
                 </div>
 
                 <div class="container">
