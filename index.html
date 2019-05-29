@@ -2,7 +2,7 @@
   <html lang="en">
   <head>
 
-      <link rel= "stylesheet" type= "text/css" href= "static/css/styles.css">
+      <link href="static/css/styles.css" rel="stylesheet">
       <meta charset="utf-8">
       <title>Our Blue Planet</title>
   </head>
@@ -44,11 +44,7 @@
 
             <!--header background image-->
             <div id= firstheader; class="col-md-12 col-sm-12">
-              <img id=earth src="nasa.jpg" alt="Sahara Desert from Space" width="100%" height="100%">
-            </div>
-
-            <div class="container4" id="ClimateChangeAPI" style="width:100%;height:400px;">
-              <script src="http://climatedataapi.worldbank.org/climateweb/rest/v1/country/type/var/start/end/ISO3"></script>
+              <img id=earth src="static/nasa.jpg" alt="Sahara Desert from Space" width="100%" height="100%">
             </div>
 
             <!--collapsibles-->
@@ -73,7 +69,7 @@
             <!--filler paragraph-->
             <div id="inter" class="container-fluid">
               <div class="col-md-9 col-sm-12">
-                <img id=saveplanet class="col-md-9 col-sm-12" src="impact.jpg" alt="protest sign" width="70%" height="100%">
+                <img id=saveplanet class="col-md-9 col-sm-12" src="static/impact.jpg" alt="protest sign" width="70%" height="100%">
                   <div id="wSpace1"></div> <!--div separator-->
                 <div id=saveplanetbox class="col-md-3 col-sm-3" width= 30% height=100%></div>
                   <p id=saveplanettext>Climate change surpasses the slight inconvenience of the temperature variations. The impact extends massively to numerous communities around the world.
@@ -88,17 +84,17 @@
               <div class="container3" id="involved">
                 <div class="row">
                   <div class="column">
-                    <img src="ecodiet.jpg" alt="eco diet" class="image" class="col-med-3 col-sm-12" width="100%" height="100%">
+                    <img src="static/ecodiet.jpg" alt="eco diet" class="image" class="col-med-3 col-sm-12" width="100%" height="100%">
                       <div class="overlay">
                       </div>
                   </div>
                   <div class="column">
-                    <img src="community.jpg" alt="community" class="image" class="col-med-3 col-sm-12" width="100%" height="350px">
+                    <img src="static/community.jpg" alt="community" class="image" class="col-med-3 col-sm-12" width="100%" height="350px">
                       <div class="overlay">
                       </div>
                   </div>
                   <div class="column">
-                    <img src="informed.jpg" alt="informed" class="image" class="col-med-3 col-sm-12" width="100%" height="350px">
+                    <img src="static/informed.jpg" alt="informed" class="image" class="col-med-3 col-sm-12" width="100%" height="350px">
                       <div class="overlay">
                         <div class="text">
                           <ul>Small Changes for a Significant Impact: <br>
@@ -131,17 +127,18 @@
                   </div>
 
                 <div class="container" style="background-color:white">
-                  <form method="post" action="/signup">
+                  <form method="post" action="/signup" target="_blank">
                     <input type="text" placeholder="Name" name="name" required>
-                    <input type="text" placeholder="Email address" name="mail" required>
-                    <label>
-                  <input type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
-                    </label>
-                </div>
+                    <input type="text" placeholder="Email address" name="email" required>
+                      <label>
+                        <input type="checkbox" checked="checked" name="subscribe"> Weekly Newsletter
+                      </label>
 
-                <div class="container">
-                  <input type="submit" value="Subscribe">
+
+                      <div class="container">
+                        <input type="submit" value="Subscribe">
+                      </div>
+                  </form>
                 </div>
-              </form>
                 <script type="text/javascript" src="static/java/scripts.js"></script>
   </body>
